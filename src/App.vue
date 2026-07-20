@@ -143,7 +143,7 @@ onBeforeUnmount(() => {
     <header class="topbar" :class="{ 'is-scrolled': scrolled }">
       <div class="container nav-wrap">
         <a class="brand" href="#top" aria-label="CLI-Manager 首页" @click="closeMenu">
-          <span class="brand-mark" aria-hidden="true"><span>&gt;_</span></span>
+          <img class="brand-mark" src="/assets/brand/cli-manager-logo.png" alt="" aria-hidden="true" />
           <span class="brand-name">CLI<span>Manager</span></span>
         </a>
 
@@ -152,6 +152,7 @@ onBeforeUnmount(() => {
           <a href="#showcase">产品</a>
           <a href="#workflow">工作流</a>
           <a href="#download">下载</a>
+          <a href="./guide.html">手册</a>
         </nav>
 
         <div class="nav-actions">
@@ -173,6 +174,7 @@ onBeforeUnmount(() => {
           <a href="#showcase" @click="closeMenu">产品 <span>02</span></a>
           <a href="#workflow" @click="closeMenu">工作流 <span>03</span></a>
           <a href="#download" @click="closeMenu">下载 <span>04</span></a>
+          <a href="./guide.html" @click="closeMenu">功能手册 <span>05</span></a>
         </nav>
         <a class="button mobile-download" :href="releaseUrl" target="_blank" rel="noreferrer">下载 CLI-Manager</a>
       </div>
@@ -290,7 +292,7 @@ onBeforeUnmount(() => {
               <div class="showcase-chips">
                 <span v-for="chip in currentShowcase.chips" :key="chip"><i></i>{{ chip }}</span>
               </div>
-              <a href="#download" class="text-link">了解更多能力 <span>→</span></a>
+              <a href="./guide.html" class="text-link">查看详细操作手册 <span>→</span></a>
             </div>
             <div class="showcase-visual">
               <div class="app-window product-window">
@@ -315,7 +317,7 @@ onBeforeUnmount(() => {
             <span class="section-kicker">Stay in the flow</span>
             <h2>从启动项目，<br />到复盘每一次创造。</h2>
             <p>CLI-Manager 沿着你的真实开发节奏工作，不改变习惯，只让每一步更顺畅。</p>
-            <a class="button button-dark" :href="githubUrl" target="_blank" rel="noreferrer">查看完整功能清单 <span>↗</span></a>
+            <a class="button button-dark" href="./guide.html">打开功能操作手册 <span>→</span></a>
           </div>
           <div class="workflow-steps">
             <article data-reveal>
@@ -396,14 +398,14 @@ onBeforeUnmount(() => {
       <div class="container footer-top">
         <div class="footer-brand">
           <a class="brand" href="#top">
-            <span class="brand-mark" aria-hidden="true"><span>&gt;_</span></span>
+            <img class="brand-mark" src="/assets/brand/cli-manager-logo.png" alt="" aria-hidden="true" />
             <span class="brand-name">CLI<span>Manager</span></span>
           </a>
           <p>让 AI CLI 工作流清晰、从容、高效。</p>
         </div>
         <div class="footer-links">
           <div><b>产品</b><a href="#features">核心功能</a><a href="#showcase">产品预览</a><a href="#download">下载</a></div>
-          <div><b>资源</b><a :href="githubUrl" target="_blank" rel="noreferrer">GitHub</a><a :href="`${githubUrl}/blob/main/README.zh-CN.md`" target="_blank" rel="noreferrer">使用文档</a><a :href="`${githubUrl}/releases`" target="_blank" rel="noreferrer">更新日志</a></div>
+          <div><b>资源</b><a :href="githubUrl" target="_blank" rel="noreferrer">GitHub</a><a href="./guide.html">功能手册</a><a :href="`${githubUrl}/releases`" target="_blank" rel="noreferrer">更新日志</a></div>
         </div>
       </div>
       <div class="container footer-bottom">

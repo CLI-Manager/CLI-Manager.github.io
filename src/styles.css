@@ -36,8 +36,7 @@ img { display: block; max-width: 100%; }
 .topbar.is-scrolled { height: 68px; background: rgba(247, 250, 252, .86); backdrop-filter: blur(18px); box-shadow: 0 1px 0 rgba(16,42,67,.08); }
 .nav-wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; }
-.brand-mark { width: 34px; height: 34px; display: grid; place-items: center; background: var(--ink-strong); border-radius: 10px; box-shadow: 0 7px 16px rgba(7,29,50,.18); }
-.brand-mark span { color: var(--cyan); font: 700 13px/1 monospace; transform: translateY(-1px); }
+.brand-mark { width: 44px; height: 44px; flex: 0 0 auto; object-fit: contain; filter: drop-shadow(0 5px 9px rgba(7,29,50,.16)); }
 .brand-name { letter-spacing: -.04em; font-size: 18px; color: var(--ink-strong); }
 .brand-name span { color: #4f687e; font-weight: 500; }
 .desktop-nav { position: absolute; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 34px; }
@@ -230,7 +229,7 @@ h1, h2, h3, p { margin-top: 0; }
 @media (max-width: 600px) {
   .container { width: calc(100% - 28px); }
   .section { padding: 76px 0; }
-  .topbar { height:66px; }.topbar.is-scrolled{height:62px}.brand-mark{width:31px;height:31px;border-radius:9px}.brand-name{font-size:16px}
+  .topbar { height:66px; }.topbar.is-scrolled{height:62px}.brand-mark{width:38px;height:38px}.brand-name{font-size:16px}
   .hero { padding-top:118px; }
   .hero-grid { background-size:42px 42px; }
   .eyebrow { height:31px;font-size:10px; }
